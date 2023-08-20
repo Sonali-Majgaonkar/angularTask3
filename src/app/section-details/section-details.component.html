@@ -1,0 +1,13 @@
+<!-- <p>section-details works!</p> -->
+<div class="container mt-5">
+    
+<p-accordion [multiple]="true" [activeIndex]="[0]">
+    <p-accordionTab [header]="i.header" *ngFor="let i of sectionDetailsArr">
+        <p>
+           {{i.details}}
+        </p>
+    </p-accordionTab>
+   
+</p-accordion>
+</div>
+
